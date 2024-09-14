@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d3984b8f.css",
+    "main.js": "/portfolio/static/js/main.3636d77f.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/logo_total.png": "/portfolio/static/media/logo_total.5f46fefde25b2681ba14.png",
+    "static/media/logo_eletronuclear.png": "/portfolio/static/media/logo_eletronuclear.9fc23e735f4e2ac55dd4.png",
+    "static/media/logo_youtube.png": "/portfolio/static/media/logo_youtube.78d21f731fce4991c733.png",
+    "static/media/logo_latermo.png": "/portfolio/static/media/logo_latermo.8a9aa19523e1681b2600.png",
+    "static/media/logo_linkedin.png": "/portfolio/static/media/logo_linkedin.5473c0dcb38d341f2056.png",
+    "static/media/logo_galp.png": "/portfolio/static/media/logo_galp.b83a9332e1b5974271fa.png",
+    "index.html": "/portfolio/index.html",
+    "main.d3984b8f.css.map": "/portfolio/static/css/main.d3984b8f.css.map",
+    "main.3636d77f.js.map": "/portfolio/static/js/main.3636d77f.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3984b8f.css",
+    "static/js/main.3636d77f.js"
+  ]
+}
