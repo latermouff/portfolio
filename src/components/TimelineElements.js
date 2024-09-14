@@ -78,7 +78,7 @@ let timelineElements = [
     },
     {
         id: 8,
-        title: "Treatment of Hypersaline Production Water via Membrane Distillation Processes",
+        title: "Treatment of Hypersaline Produced Water via the Membrane Distillation Process",
         location: "Federal University of Rio de Janeiro (UFRJ)",
         description: "Develop a system for the recovery of waste heat from gas turbines for the treatment of formation water and oil production using membrane distillation",
         trl: 6,
