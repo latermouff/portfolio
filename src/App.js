@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Team from './components/Team';
 import Projects from './components/Projects';
+import Project from "./components/Project";
 // import Skills from './components/Skills';
 // import Partners from './components/Partners';
 import Local from './components/Local';
@@ -13,6 +14,8 @@ document.body.style.backgroundColor = "white";
 function App() {
   const [showTeam, setShowTeam] = useState(false);
   const [showProjects, setShowProjects] = useState(true);
+  const [showProject, setShowProject] = useState(false);
+  const [projectData, setProjectData] = useState(null);
   // const [showSkills, setShowSkills] = useState(false);
   // const [showPartners, setShowPartners] = useState(false);
   const [showLocal, setShowLocal] = useState(false);
@@ -25,6 +28,7 @@ function App() {
   const goToTeam = () => {
     setShowTeam(true);
     setShowProjects(false);
+    setShowProject(false);
     // setShowSkills(false);
     // setShowPartners(false);
     setShowLocal(false);
@@ -34,6 +38,18 @@ function App() {
   const goToProjects = () => {
     setShowTeam(false);
     setShowProjects(true);
+    setShowProject(false);
+    // setShowSkills(false);
+    // setShowPartners(false);
+    setShowLocal(false);
+    setShowDropdown(false);
+  };
+
+  const goToProject = (data) => {
+    setProjectData(data);
+    setShowTeam(false);
+    setShowProjects(false);
+    setShowProject(true);
     // setShowSkills(false);
     // setShowPartners(false);
     setShowLocal(false);
@@ -43,6 +59,7 @@ function App() {
   // const goToSkills = () => {
   //   setShowTeam(false);
   //   setShowProjects(false);
+  //   setShowProject(false);
   //   setShowSkills(true);
   //   setShowPartners(false);
   //   setShowLocal(false);
@@ -52,6 +69,7 @@ function App() {
   // const goToPartners = () => {
   //   setShowTeam(false);
   //   setShowProjects(false);
+  //   setShowProject(false);
   //   setShowSkills(false);
   //   setShowPartners(true);
   //   setShowLocal(false);
@@ -61,6 +79,7 @@ function App() {
   const goToLocal = () => {
     setShowTeam(false);
     setShowProjects(false);
+    setShowProject(false);
     // setShowSkills(false);
     // setShowPartners(false);
     setShowLocal(true);
@@ -93,7 +112,8 @@ function App() {
       </div>
       <div style={{ marginTop: '100px' }}>
         {showTeam && <Team />}
-        {showProjects && <Projects />}
+        {showProjects && <Projects goToProject={goToProject} />}
+        {showProject && <Project data={projectData} goToProjects={goToProjects} />}
         {/* {showSkills && <Skills />}
         {showPartners && <Partners />} */}
         {showLocal && <Local />}
@@ -103,4 +123,4 @@ function App() {
   );
 }
 
-  export default App;
+export default App;

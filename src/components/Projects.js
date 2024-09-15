@@ -1,4 +1,3 @@
-import React from 'react';
 import PetrobrasIcon from "../images/logo_petrobras.png";
 import TenarisIcon from "../images/logo_tenaris.png";
 import EletronuclearIcon from "../images/logo_eletronuclear.png";
@@ -13,7 +12,7 @@ import {
 
 import "react-vertical-timeline-component/style.min.css";
 
-const Projects = () => {
+const Projects = ({goToProject}) => {
   return (
     <div>
       <h1>R&D Projects</h1>
@@ -25,7 +24,10 @@ const Projects = () => {
             let isEletronuclear = element.icon === "logo_eletronuclear";
             let isGALP = element.icon === "logo_galp";
 
-            let showButton = element.buttonText !== undefined;
+            const handleProjectClick = () => {
+              let data = element;
+              goToProject(data);
+            }
 
             return (
               <VerticalTimelineElement
@@ -41,11 +43,9 @@ const Projects = () => {
                 <h4 className="vertical-timeline-element-subtitle">{element.company}</h4>
                 <h4 className="vertical-timeline-element-subtitle">TRL{element.trl}</h4>
                 <p><b>Objectives:</b> {element.description}</p>
-                {showButton && (
-                  <a className={`button ${isPetrobras ? 'petrobras' : isTenaris ? 'tenaris' : 'eletronuclear'}`} href={element.buttonLink}>
-                    {element.buttonText}
-                  </a>
-                )}
+                <div style={{display: "flex", justifyContent: "center", alignItems: "right"}}>
+                  <button className="detailButton" onClick={handleProjectClick}>{element.buttonText}</button>
+                </div>
               </VerticalTimelineElement>
             );
           })
