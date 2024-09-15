@@ -34,7 +34,7 @@ let teamElements = [
     },
     {
         name: "Leandro Alcoforado Sphaier",
-        position: "Assistant Professor and Head of Latermo",
+        position: "Associate Professor and Head of Latermo",
         researchInterests: "Adsorption, gasification, alcoholic fermentation, hybrid analytical-numerical methods",
         email: "mailto:lasphaier@id.uff.br",
         lattes: "http://lattes.cnpq.br/8948736724490274",

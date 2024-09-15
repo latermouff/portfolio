@@ -33,6 +33,7 @@ function App() {
     // setShowPartners(false);
     setShowLocal(false);
     setShowDropdown(false);
+    window.scrollTo(0, 0);
   };
 
   const goToProjects = () => {
@@ -43,6 +44,7 @@ function App() {
     // setShowPartners(false);
     setShowLocal(false);
     setShowDropdown(false);
+    window.scrollTo(0, 0);
   };
 
   const goToProject = (data) => {
@@ -54,6 +56,7 @@ function App() {
     // setShowPartners(false);
     setShowLocal(false);
     setShowDropdown(false);
+    window.scrollTo(0, 0);
   };
 
   // const goToSkills = () => {
@@ -64,6 +67,7 @@ function App() {
   //   setShowPartners(false);
   //   setShowLocal(false);
   //   setShowDropdown(false);
+  //   window.scrollTo(0, 0);
   // };
 
   // const goToPartners = () => {
@@ -74,6 +78,7 @@ function App() {
   //   setShowPartners(true);
   //   setShowLocal(false);
   //   setShowDropdown(false);
+  //   window.scrollTo(0, 0);
   // };
 
   const goToLocal = () => {
@@ -84,6 +89,7 @@ function App() {
     // setShowPartners(false);
     setShowLocal(true);
     setShowDropdown(false);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -94,13 +100,13 @@ function App() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', margin: '5px' }}>
             <img src={require('./images/logo_latermo.png')} alt="Logo Latermo" style={{ width: 'auto', height: '50px' }} />
           </div>
-          <div style={{ position: 'relative', alignItems: 'center', margin: '5px' }}>
-            <button class="iconButton" onClick={toggleDropdown}>
-              <img src={require('./images/menu.png')} alt="Menu" style={{ width: 'auto', height: '34px' }} />
-            </button>
+          <div className="custom-dropdown" style={{ position: 'relative', alignItems: 'center', margin: '5px' }}>
+            <div class="dropdown-toggle" onClick={toggleDropdown}>
+              <img className="iconButton" src={require('./images/menu.png')} alt="Menu" style={{ width: 'auto', height: '34px' }} />
+            </div>
             {showDropdown && (
-              <div style={{ position: 'absolute', top: '100%', right: 0, backgroundColor: 'white', padding: '8px', borderRadius: '4px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>
-                <button onClick={goToTeam}>Team</button>
+              <div className="dropdown-menu">
+                <button onClick={goToTeam}>Our Team</button>
                 <button onClick={goToProjects}>R&D Projects</button>
                 {/* <button onClick={goToSkills}>Skills</button>
                 <button onClick={goToPartners}>Partners</button> */}
