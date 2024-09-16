@@ -7,7 +7,7 @@ const Project = ({data, goToProjects}) => {
             <button className="backButton" onClick={goToProjects}>Back to R&D projects</button>
             <div className="project-item">
                 <p style={{textAlign: "left"}}><b>Project site:</b> {data.laboratory}</p>
-                <p style={{textAlign: "left"}}><b>Company:</b> {data.company}</p>
+                <p style={{textAlign: "left"}}><b>Sponsor:</b> {data.company}</p>
                 <p style={{textAlign: "left"}}><b>TRL:</b> {data.trl}</p>
                 <p style={{textAlign: "left"}}><b>Period:</b> {data.date}</p>
                 <p style={{textAlign: "left"}}><b>Coordinator:</b> {data.coordinator}</p>
