@@ -6,22 +6,49 @@ const Local = () => {
     <div>
       <h1>Where to find us?</h1>
       <div class="local-item">
-        <h2>Contact information</h2>
+        <h2>E-mail and social media</h2>
         <p>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src={require("../images/logo_email.png")} alt="E-mail" style={{ width: 'auto', height: '30px', marginRight: '5px' }} />
-            <b style={{ marginRight: '3px' }}>E-mail:</b> kmlisboa@id.uff.br<br />
+            <a href="mailto:latermouff1@gmail.com" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/logo_email.png")} alt="E-mail" style={{ width: 'auto', height: '30px', marginRight: '5px' }} />
+            </a>
+            latermouff1@gmail.com<br />
           </div>
         </p>
         <p>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <img src={require("../images/logo_phone.png")} alt="Phone" style={{ width: 'auto', height: '30px', marginRight: '5px', verticalAlign: 'middle' }} />
-            <b style={{ marginRight: '3px' }}>Phone:</b> +55 21 2629-9617<br />
+            <a href="https://www.youtube.com/@latermo2641" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/logo_youtube.png")} alt="YouTube" style={{ width: 'auto', height: '25px', marginRight: '5px', verticalAlign: 'middle' }} />
+            </a>
+            @latermo2641<br />
+          </div>
+        </p>
+        <p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <a href="https://www.linkedin.com/company/laborat%C3%B3rio-de-termoci%C3%AAncias-latermo/" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/logo_linkedin.png")} alt="LinkedIn" style={{ width: 'auto', height: '30px', marginRight: '5px', verticalAlign: 'middle' }} />
+            </a>
+            @laboratório-de-termociências-latermo<br />
+          </div>
+        </p>
+        <p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <a href="https://www.instagram.com/latermo_uff/" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/logo_instagram.png")} alt="Instagram" style={{ width: 'auto', height: '30px', marginRight: '5px', verticalAlign: 'middle' }} />
+            </a>
+            @latermo_uff<br />
+          </div>
+        </p>
+        <p>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <a href="https://github.com/latermouff/" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/logo_github.png")} alt="GitHub" style={{ width: 'auto', height: '30px', marginRight: '5px', verticalAlign: 'middle' }} />
+            </a>
+            @latermouff<br />
           </div>
         </p>
       </div>
       <div class="local-item">
-        {/* <h2>Address</h2> */}
         <p>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <img src={require("../images/logo_location.png")} alt="Address" style={{ width: 'auto', height: '30px', marginRight: '5px' }} />

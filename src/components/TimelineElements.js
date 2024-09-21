@@ -15,6 +15,7 @@ let timelineElements = [
         buttonText: "View Details",
         date: "2013-2014",
         icon: "logo_petrobras",
+        imageFolder: "sgn",
     },
     {
         id: 2,
@@ -32,6 +33,7 @@ let timelineElements = [
         buttonText: "View Details",
         date: "2014-2014",
         icon: "logo_tenaris",
+        imageFolder: "hiperbarico",
     },
     {
         id: 3,
@@ -49,6 +51,7 @@ let timelineElements = [
         buttonText: "View Details",
         date: "2015-2016",
         icon: "logo_eletronuclear",
+        imageFolder: "passivonuclear",
     },
     {
         id: 4,
@@ -66,6 +69,7 @@ let timelineElements = [
         buttonText: "View Details",
         date: "2016-2017",
         icon: "logo_petrobras",
+        imageFolder: "mhd",
     },
     {
         id: 5,
@@ -83,6 +87,7 @@ let timelineElements = [
         buttonText: "View Details",
         date: "2019-2023",
         icon: "logo_petrobras",
+        imageFolder: "blindagens",
     },
     {
         id: 6,
@@ -100,6 +105,7 @@ let timelineElements = [
         buttonText: "View Details",
         date: "2020-2024",
         icon: "logo_galp",
+        imageFolder: "microdissipadores",
     },
     {
         id: 7,
@@ -117,6 +123,7 @@ let timelineElements = [
         buttonText: "View Details",
         date: "2024-present",
         icon: "logo_galp",
+        imageFolder: "energente",
     },
     {
         id: 8,
@@ -134,6 +141,7 @@ let timelineElements = [
         buttonText: "View Details",
         date: "2024-present",
         icon: "logo_total",
+        imageFolder: "aguaproduzida",
     }
 ]
 

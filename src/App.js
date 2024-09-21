@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Team from './components/Team';
 import Projects from './components/Projects';
 import Project from "./components/Project";
-// import Skills from './components/Skills';
+import Skills from './components/Skills';
 // import Partners from './components/Partners';
 import Local from './components/Local';
 import Footer from './components/Footer';
@@ -16,7 +16,7 @@ function App() {
   const [showProjects, setShowProjects] = useState(true);
   const [showProject, setShowProject] = useState(false);
   const [projectData, setProjectData] = useState(null);
-  // const [showSkills, setShowSkills] = useState(false);
+  const [showSkills, setShowSkills] = useState(false);
   // const [showPartners, setShowPartners] = useState(false);
   const [showLocal, setShowLocal] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -29,7 +29,7 @@ function App() {
     setShowTeam(true);
     setShowProjects(false);
     setShowProject(false);
-    // setShowSkills(false);
+    setShowSkills(false);
     // setShowPartners(false);
     setShowLocal(false);
     setShowDropdown(false);
@@ -40,7 +40,7 @@ function App() {
     setShowTeam(false);
     setShowProjects(true);
     setShowProject(false);
-    // setShowSkills(false);
+    setShowSkills(false);
     // setShowPartners(false);
     setShowLocal(false);
     setShowDropdown(false);
@@ -52,23 +52,23 @@ function App() {
     setShowTeam(false);
     setShowProjects(false);
     setShowProject(true);
-    // setShowSkills(false);
+    setShowSkills(false);
     // setShowPartners(false);
     setShowLocal(false);
     setShowDropdown(false);
     window.scrollTo(0, 0);
   };
 
-  // const goToSkills = () => {
-  //   setShowTeam(false);
-  //   setShowProjects(false);
-  //   setShowProject(false);
-  //   setShowSkills(true);
-  //   setShowPartners(false);
-  //   setShowLocal(false);
-  //   setShowDropdown(false);
-  //   window.scrollTo(0, 0);
-  // };
+  const goToSkills = () => {
+    setShowTeam(false);
+    setShowProjects(false);
+    setShowProject(false);
+    setShowSkills(true);
+    // setShowPartners(false);
+    setShowLocal(false);
+    setShowDropdown(false);
+    window.scrollTo(0, 0);
+  };
 
   // const goToPartners = () => {
   //   setShowTeam(false);
@@ -85,7 +85,7 @@ function App() {
     setShowTeam(false);
     setShowProjects(false);
     setShowProject(false);
-    // setShowSkills(false);
+    setShowSkills(false);
     // setShowPartners(false);
     setShowLocal(true);
     setShowDropdown(false);
@@ -106,10 +106,10 @@ function App() {
             </div>
             {showDropdown && (
               <div className="dropdown-menu">
-                <button onClick={goToTeam}>Our Team</button>
                 <button onClick={goToProjects}>R&D Projects</button>
-                {/* <button onClick={goToSkills}>Skills</button>
-                <button onClick={goToPartners}>Partners</button> */}
+                <button onClick={goToTeam}>Our Team</button>
+                <button onClick={goToSkills}>Skills</button>
+                {/* <button onClick={goToPartners}>Partners</button> */}
                 <button onClick={goToLocal}>Where to find us?</button>
               </div>
             )}
@@ -120,8 +120,8 @@ function App() {
         {showTeam && <Team />}
         {showProjects && <Projects goToProject={goToProject} />}
         {showProject && <Project data={projectData} goToProjects={goToProjects} />}
-        {/* {showSkills && <Skills />}
-        {showPartners && <Partners />} */}
+        {showSkills && <Skills />}
+        {/* {showPartners && <Partners />} */}
         {showLocal && <Local />}
         <Footer />
       </div>
