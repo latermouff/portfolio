@@ -54,15 +54,15 @@ const Project = ({data, goToProjects}) => {
                         {
                             images.map((image, index) => {
                                 return (
-                                    <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "400px" }}>
+                                    <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                                         <img 
                                             src={image} 
                                             alt={`Slide ${index}`} 
                                             style={{ 
+                                                width: "100%",
                                                 maxWidth: "800px",
-                                                maxHeight: "400px",
-                                                width: "auto",
                                                 height: "auto",
+                                                maxHeight: "90vh",
                                                 objectFit: "contain",
                                                 margin: "0 auto"
                                             }} 

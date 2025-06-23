@@ -38,7 +38,7 @@ const Projects = ({goToProject}) => {
                 key={element.id}
                 date={<span style={{ color: '#000' }}><b>{element.date}</b></span>}
                 iconStyle= {{ display: 'flex', justifyContent: 'center', background: '#fff', alignItems:'center', boxShadow: '0 0 0 4px #1b89ff', borderRadius: '50%' }}
-                icon={isPetrobras ? <img src={PetrobrasIcon} alt="Petrobras" width='25px' /> : isTenaris ? <img src={TenarisIcon} alt="Tenaris" width='25px' /> : isEletronuclear ? <img src={EletronuclearIcon} alt="Eletronuclear" width='35px' /> : isGALP ? <img src={GALPIcon} alt="GALP" width='35px' /> : isTotal ? <img src={TotalIcon} alt="Total" width='30px' /> : <img src={PRIOIcon} alt="PRIO" width='50px'/>}
+                icon={isPetrobras ? <img src={PetrobrasIcon} alt="Petrobras" width='25px' /> : isTenaris ? <img src={TenarisIcon} alt="Tenaris" width='25px' /> : isEletronuclear ? <img src={EletronuclearIcon} alt="Eletronuclear" width='35px' /> : isGALP ? <img src={GALPIcon} alt="GALP" width='35px' /> : isTotal ? <img src={TotalIcon} alt="Total" width='30px' /> : <img src={PRIOIcon} alt="PRIO" width='35px'/>}
               >
                 <h2 className="vertical-timeline-element-title" style={{color: '#fff'}}>{element.title}</h2>
                 <h4 className="vertical-timeline-element-subtitle">{element.location}</h4>
