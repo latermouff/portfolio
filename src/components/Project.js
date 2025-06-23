@@ -33,12 +33,12 @@ const Project = ({data, goToProjects}) => {
                 <p style={{textAlign: "left"}}><b>Main deliverables:</b><br />
                     <ul>
                         {
-                            data.deliverables.map(deliverable => {
+                            data.deliverables.map((deliverable, idx) => {
                                 return (
-                                    <li>{deliverable}</li>
+                                    <li key={idx}>{deliverable}</li>
                                 );
                             })
-                           }
+                        }
                     </ul>
                 </p>
             </div>
@@ -49,17 +49,30 @@ const Project = ({data, goToProjects}) => {
             </div>
             <button className="backButton" onClick={goToProjects}>Back to R&D projects</button>
             <div className="project-item">
-                <Slider {...settings}>
-                    {
-                        images.map((image, index) => {
-                            return (
-                                <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "400px" }}>
-                                    <img src={image} alt={`Slide ${index}`} style={{ maxWidth: "100%", maxHeight: "100%", margin: "0 auto"}} />
-                                </div>
-                            );
-                        })
-                    }
-                </Slider>
+                <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+                    <Slider {...settings}>
+                        {
+                            images.map((image, index) => {
+                                return (
+                                    <div key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "400px" }}>
+                                        <img 
+                                            src={image} 
+                                            alt={`Slide ${index}`} 
+                                            style={{ 
+                                                maxWidth: "800px",
+                                                maxHeight: "400px",
+                                                width: "auto",
+                                                height: "auto",
+                                                objectFit: "contain",
+                                                margin: "0 auto"
+                                            }} 
+                                        />
+                                    </div>
+                                );
+                            })
+                        }
+                    </Slider>
+                </div>
             </div>
             <button className="backButton" onClick={goToProjects}>Back to R&D projects</button>
         </div>
