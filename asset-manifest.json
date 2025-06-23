@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.648087d7.css",
-    "main.js": "/portfolio/static/js/main.39598e47.js",
+    "main.js": "/portfolio/static/js/main.4e5ef912.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/leandrosphaier.png": "/portfolio/static/media/leandrosphaier.3704143ffb6f0e5c0052.png",
     "static/media/kleberlisboa.png": "/portfolio/static/media/kleberlisboa.850a1a6a1bcd73edc1f8.png",
     "static/media/cesarpacheco.png": "/portfolio/static/media/cesarpacheco.52a3165f09eaf7963564.png",
     "static/media/isabelaflorindo.png": "/portfolio/static/media/isabelaflorindo.c63f7c9aeb647320aaa7.png",
+    "static/media/hydron_01.png": "/portfolio/static/media/hydron_01.18ac0a20f77a7bc92426.png",
     "static/media/microdissipadores_03.png": "/portfolio/static/media/microdissipadores_03.f619a8e4769a02592d78.png",
     "static/media/blindagens_01.png": "/portfolio/static/media/blindagens_01.dbeb01640b00cbc55f1e.png",
     "static/media/microdissipadores_02.png": "/portfolio/static/media/microdissipadores_02.caa47723f0724639858d.png",
@@ -36,6 +37,7 @@
     "static/media/logo_location.png": "/portfolio/static/media/logo_location.b4c390a129a2b052a9d9.png",
     "static/media/logo_linkedin.png": "/portfolio/static/media/logo_linkedin.5473c0dcb38d341f2056.png",
     "static/media/logo_petrobras.svg": "/portfolio/static/media/logo_petrobras.ae596d2e494fa986a064.svg",
+    "static/media/logo_prio.png": "/portfolio/static/media/logo_prio.f7e9da7b3a398648dc0e.png",
     "static/media/logo_scopus.png": "/portfolio/static/media/logo_scopus.3b2b8e9bbd979cadf388.png",
     "static/media/logo_galp.png": "/portfolio/static/media/logo_galp.b83a9332e1b5974271fa.png",
     "static/media/logo_tenaris.svg": "/portfolio/static/media/logo_tenaris.15d0c0aa06cac10002dd.svg",
@@ -45,11 +47,11 @@
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/portfolio/index.html",
     "main.648087d7.css.map": "/portfolio/static/css/main.648087d7.css.map",
-    "main.39598e47.js.map": "/portfolio/static/js/main.39598e47.js.map",
+    "main.4e5ef912.js.map": "/portfolio/static/js/main.4e5ef912.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.648087d7.css",
-    "static/js/main.39598e47.js"
+    "static/js/main.4e5ef912.js"
   ]
 }
